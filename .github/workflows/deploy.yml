@@ -1,0 +1,20 @@
+name: deploy
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  ARTIFACT_BUCKET: ${{ secrets.ARTIFACT_BUCKET }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: docker/setup-qemu-action@v1
+      - run: |
+          docker run --rm -i arm64/public.ecr.aws/sam/build-python3.9:1.62.0 uname -a
