@@ -17,4 +17,4 @@ jobs:
     steps:
       - uses: docker/setup-qemu-action@v1
       - run: |
-          docker run --rm -i arm64/public.ecr.aws/sam/build-python3.9:1.62.0 uname -a
+          docker run --rm -i public.ecr.aws/sam/build-python3.9:1.62.0-arm64 uname -a
