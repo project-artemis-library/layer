@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 env:
-  ARTIFACT_BUCKET: ${{ secrets.ARTIFACT_BUCKET }}
+  SAM_ARTIFACT_BUCKET: ${{ secrets.ARTIFACT_BUCKET }}
 
 jobs:
   deploy:
