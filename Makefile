@@ -6,7 +6,7 @@ clean:
 	rm -rf layers/
 	find . -type f -name requirements.txt | xargs rm
 
-build: clean build-collection
+build: build-collection
 
 export-collection:
 	cd ./collection/; \
