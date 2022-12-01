@@ -11,6 +11,7 @@ beautifulsoup4 = "4.11.1"
 requests = "2.28.1"
 boto3 = "1.26.8"
 boto3-stubs = {version = "1.26.8", extras = ["s3", "dynamodb", "sqs"]}
+psycopg2-binary = "^2.9.5"
 
 [tool.poetry.dev-dependencies]
 
