@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: "3.9.13"
-      - uses: aws-actions/configure-aws-credentials@v1-node
+      - uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           role-to-assume: ${{ secrets.ARN_IAM_ROLE }}
           aws-region: ap-northeast-1
