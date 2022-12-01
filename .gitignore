@@ -263,3 +263,7 @@ fabric.properties
 /layers/
 /tmp/
 requirements.txt
+template.yml
+*.tar
+*.zip
+
