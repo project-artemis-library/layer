@@ -22,7 +22,8 @@ jobs:
           python-version: "3.8"
       - run: pip install poetry
       - run: make build
+      - run: tar cf layers.tar layers/
       - uses: actions/upload-artifact@v3
         with:
-          name: layers
-          path: layers
+          name: layers.tar
+          path: layers.tar
